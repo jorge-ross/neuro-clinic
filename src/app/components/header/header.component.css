@@ -1,0 +1,18 @@
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 16px;
+}
+
+.left h1 {
+  margin: 0;
+}
+
+.right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}

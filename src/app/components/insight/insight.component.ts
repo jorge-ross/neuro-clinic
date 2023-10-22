@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from "./../../models/product.model"
 
 @Component({
   selector: 'app-insight',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./insight.component.css']
 })
 export class InsightComponent {
+  
+  @Input() product!: Product;
 
 }
