@@ -7,7 +7,5 @@ import { Product } from "./../../models/product.model"
   styleUrls: ['./insight.component.css']
 })
 export class InsightComponent {
-  
-  @Input() product!: Product;
 
 }
