@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0572b6;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: rgb(29, 121, 225);
   padding: 10px 16px;
+  height: 64px;  
 }
 
 .left h1 {
@@ -12,7 +13,20 @@
 }
 
 .right a {
-  color: white;
+  color: rgb(29, 121, 225);
   text-decoration: none;
   margin-left: 20px;
 }
+
+.font-header {
+  font-family: 'Quiksand', sans-serif;
+  font-size: 20px;
+}
+
+.header-options {
+  font-family: 'Quiksand', sans-serif;
+  font-size: 16px;
+}
+
+
+
