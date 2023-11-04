@@ -1,13 +1,15 @@
 .intro-container {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(45, 141, 225, 0)), url('../../../assets/images/intro-bg.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
   display: flex;
-  flex-direction: row;
   width: 100%;
   gap: 28px;
   justify-content: center;
   align-items: center;
   height: 300px;
   padding: 16px;
-  background-color: rgb(45, 111, 225);
 }
 
 .title {
@@ -35,5 +37,5 @@
 }
 
 .site-intro {
-  width: 100%;
+  width: 70%;
 }

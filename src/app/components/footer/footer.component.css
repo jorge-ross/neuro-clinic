@@ -1,6 +1,16 @@
-.footer-title {
+.footer {
+  background-image: url('../../../assets/images/footer-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  color: white;
   display: flex;
   justify-content: center;
-  color: white;
-  background-color: #0572b6;
+  align-items: center;
+  height: 100px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
