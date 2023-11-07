@@ -8,24 +8,23 @@
   height: 64px;  
 }
 
-.left h1 {
-  margin: 0;
+.styled-img {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .right a {
-  color: rgb(29, 121, 225);
+  color: #1D2C60;
   text-decoration: none;
   margin-left: 20px;
-}
-
-.font-header {
-  font-family: 'Quiksand', sans-serif;
-  font-size: 20px;
 }
 
 .header-options {
   font-family: 'Quiksand', sans-serif;
   font-size: 16px;
+  
 }
 
 
