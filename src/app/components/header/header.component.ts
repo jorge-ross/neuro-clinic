@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  isDropdownVisible: boolean = false;
+
+  onMouseEnter() {
+    this.isDropdownVisible = true;
+  }
+
+  onMouseLeave() {
+    this.isDropdownVisible = false;
+  }
+
 }

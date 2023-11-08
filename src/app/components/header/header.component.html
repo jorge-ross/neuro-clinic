@@ -9,13 +9,18 @@
   <div class="right header-options">
     <button routerLink="/Sobre">Sobre mí</button>
     <button routerLink="/Blog">Blog</button>
-    <div class="dropdown">
-      <button>Servicios</button>
-      <div class="dropdown-content">
-        <div class="dropdown-column">
-          <a routerLink="/Psicologia">Psicología</a>
-          <a routerLink="/Neuropsicologia">Neuropsicología</a>
-        </div>
+    <div
+      class="dropdown"
+      (mouseenter)="onMouseEnter()"
+      (mouseleave)="onMouseLeave()"
+    >
+      Servicios
+      <div
+        class="dropdown-content"
+        [ngClass]="{ 'show-dropdown': isDropdownVisible }"
+      >
+        <a routerLink="/Neuropsicologia">Neuropsicología</a>
+        <a routerLink="/Psicologia">Psicología</a>
       </div>
     </div>
     <button routerLink="/Contact">Contacto</button>
