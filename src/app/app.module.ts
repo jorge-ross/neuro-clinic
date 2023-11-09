@@ -7,6 +7,7 @@ import { InsightComponent } from './components/insight/insight.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroComponent } from './components/intro/intro.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { IntroComponent } from './components/intro/intro.component';
     InsightComponent,
     HeaderComponent,
     FooterComponent,
-    IntroComponent
+    IntroComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

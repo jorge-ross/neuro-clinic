@@ -1,6 +1,8 @@
 .container {
   min-height: 100%;
   margin: 0 0 -60px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .info-container {
@@ -10,4 +12,33 @@
   flex-direction: row;
   justify-content: center;
   gap: 40px;
+  margin: 0 20px;
+  width: 800px;
+}
+
+.nd-info {
+  padding-top: 16px;
+  width: 460px;
+}
+
+.right-img {
+  width: 300px;
+  padding-top: 16px;
+}
+
+.contact-form {
+  width: 300px;
+  padding-top: 16px;
+  border: 1px solid yellow;
+}
+
+.title-info {
+  font-family: 'Quiksand', sans-serif;
+  margin: 0;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
