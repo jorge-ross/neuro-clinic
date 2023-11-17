@@ -6,46 +6,48 @@
   </p>
   <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
     <div class="form-group">
-      <input
-        type="text"
-        id="name"
-        name="name"
-        [(ngModel)]="formData.name"
-        required
-        placeholder="Nombre"
-      />
-    </div>
+      <div class="grid-item">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          [(ngModel)]="formData.name"
+          required
+          placeholder="Nombre"
+        />
+      </div>
 
-    <div class="form-group">
-      <input
-        type="email"
-        id="email"
-        name="email"
-        [(ngModel)]="formData.email"
-        required
-        placeholder="Correo electrónico"
-      />
-    </div>
+      <div class="grid-item">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="formData.email"
+          required
+          placeholder="Correo electrónico"
+        />
+      </div>
 
-    <div class="form-group">
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        [(ngModel)]="formData.phone"
-        required
-        placeholder="Teléfono"
-      />
-    </div>
+      <div class="grid-item">
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          [(ngModel)]="formData.phone"
+          required
+          placeholder="Teléfono"
+        />
+      </div>
 
-    <div class="form-group">
-      <textarea
-        id="message"
-        name="message"
-        [(ngModel)]="formData.message"
-        required
-        placeholder="Mensaje"
-      ></textarea>
+      <div class="grid-item message">
+        <textarea
+          id="message"
+          name="message"
+          [(ngModel)]="formData.message"
+          required
+          placeholder="Mensaje"
+        ></textarea>
+      </div>
     </div>
 
     <div class="center-button">

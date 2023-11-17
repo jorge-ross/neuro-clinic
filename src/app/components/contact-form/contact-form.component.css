@@ -1,14 +1,18 @@
 .contact-form {
-  max-width: 250px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+  width: 100%;
+  padding: 24px 0 28px;
   background-color: #ebebeb;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form-group {
+  width: 770px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-gap: 16px;
   margin-bottom: 20px;
 }
 
@@ -59,4 +63,9 @@ h2 {
 p {
   margin: 0 0 16px 0;
   font-family: 'Quiksand', sans-serif;
+  text-align: center;
+}
+
+.message {
+  grid-column: 1 / 4;
 }
