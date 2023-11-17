@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router'
+ 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  template: `<button (click)="navigateToContact()">Contacto</button>`
 })
 export class HeaderComponent {
 
@@ -15,6 +17,16 @@ export class HeaderComponent {
 
   onMouseLeave() {
     this.isDropdownVisible = false;
+  }
+
+  constructor(private router: Router) {
+    router.events.subscribe(event => {
+      console.log(event);
+    })
+  }
+
+  navigateToContact() {
+    this.router.navigate(['/Contact']);
   }
 
 }

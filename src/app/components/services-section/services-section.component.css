@@ -3,3 +3,10 @@
   margin: 0;
   background-color: #D6D3D1;
 }
+
+h1 {
+  text-align: center;
+  padding-top: 16px;
+  font-family: 'Raleway';
+  font-size: 28px;
+}
