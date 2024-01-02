@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 10px 16px;
+  padding: 10px 24px;
   height: 64px;  
 }
 
@@ -60,6 +60,7 @@
   background-color: #fcfcfc;
   z-index:1;
   top: 100%;
+  padding-top: 8px;
   width: 160px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -88,6 +89,32 @@
 .show-dropdown {
   display: block;
   flex-direction: column;
+}
+
+.hamburger-menu {
+  display: none; /* Initially hide the hamburger menu button */
+  font-size: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .right.header-options {
+    display: none; /* Hide the regular menu items on small screens */
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #4e3535;
+    padding: 10px;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu button on small screens */
+    border: none;
+  }
+
+  .show-menu {
+    display: flex; /* Show the menu items when the hamburger menu is clicked */
+    flex-direction: column;
+  }
 }
 
 

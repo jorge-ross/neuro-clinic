@@ -6,10 +6,11 @@
       class="styled-img"
     />
   </div>
-  <div class="right header-options">
+  <button class="hamburger-menu" (click)="toggleMenu()">☰</button>
+  <div class="right header-options" [ngClass]="{ 'show-menu': isMenuVisible }">
     <button routerLink="/Sobre">Sobre mí</button>
     <button routerLink="/Blog">Blog</button>
-    <div
+    <!-- <div
       class="dropdown"
       (mouseenter)="onMouseEnter()"
       (mouseleave)="onMouseLeave()"
@@ -22,7 +23,7 @@
         <a routerLink="/Neuropsicologia">Neuropsicología</a>
         <a routerLink="/Psicologia">Psicología</a>
       </div>
-    </div>
+    </div> -->
     <button routerLink="/Contact">Contacto</button>
   </div>
 </div>

@@ -29,4 +29,11 @@ export class HeaderComponent {
     this.router.navigate(['/Contact']);
   }
 
+  isMenuVisible = false;
+
+  toggleMenu() {
+    console.log("I'm here!")
+    this.isMenuVisible = !this.isMenuVisible;
+  }
+
 }
