@@ -33,6 +33,11 @@ export class HeaderComponent {
 
   toggleMenu() {
     this.isMenuVisible = !this.isMenuVisible;
+    const hamburgerIcon = document.querySelector('.hamburger-icon');
+
+    if(hamburgerIcon) {
+      hamburgerIcon.classList.toggle('rotate-icon', this.isMenuVisible);
+    }
   }
 
 }

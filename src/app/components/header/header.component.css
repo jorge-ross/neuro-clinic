@@ -23,6 +23,7 @@
 
 .header-options {
   font-family: 'Quiksand', sans-serif;
+  display: flex;
 }
 
 .header-options button {
@@ -34,23 +35,6 @@
   cursor: pointer;
   background-color: transparent; 
   font-size: 16px;
-}
-
-
-.header-options .dropdown {
-  color: #162f91;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 75px;
-  height: 27px;
-}
-
-.header-options .dropdown:hover {
-  color: #c08600;
-  cursor: pointer;
 }
 
 .dropdown-content {
@@ -66,39 +50,31 @@
   border-bottom-right-radius: 10px;
 }
 
-.dropdown-content a {
-  color: #003bcf;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: 36px;
-}
-
-.header-options .dropdown:hover .dropdown-content {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-}
-
 .header-options button:hover {
   color: #c05a00;
   cursor: pointer;
 }
 
-.show-dropdown {
-  display: block;
-  flex-direction: column;
-}
-
 .hamburger-icon {
   display: none;
   cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-icon.rotate-icon {
+  transform: rotate(360deg);
 }
 
 .hamburger-menu {
+  display: flex;
+  position: absolute;
+  padding: 12px 0;
+  top: 84px;
+  z-index: 1;
+  width: 90%;
+  background-color: rgba(211, 211, 211, 0.9);
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .responsive-menu button {
@@ -113,4 +89,8 @@
   .header-options:not(.hamburger-menu) {
     display: none;
   }
+}
+
+.rotate-icon {
+  transform: rotate(90deg); /* Rotate the icon 90 degrees when the class is applied */
 }
