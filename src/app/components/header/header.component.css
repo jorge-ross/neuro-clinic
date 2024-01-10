@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 10px 24px;
+  padding: 10px 30px;
   height: 64px;  
 }
 
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .header-options {
@@ -27,7 +27,7 @@
 
 .header-options button {
   color: #162f91;
-  width: 75px;
+  width: auto;
   height: 27px;
   padding: 0;
   border: none;
@@ -91,31 +91,26 @@
   flex-direction: column;
 }
 
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
 .hamburger-menu {
-  display: none; /* Initially hide the hamburger menu button */
-  font-size: 32px;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-@media screen and (max-width: 600px) {
-  .right.header-options {
-    display: none; /* Hide the regular menu items on small screens */
-    position: absolute;
-    top: 100px;
-    right: 0;
-    background-color: #4e3535;
-    padding: 10px;
-  }
-
-  .hamburger-menu {
-    display: block; /* Show the hamburger menu button on small screens */
-    border: none;
-  }
-
-  .show-menu {
-    display: flex; /* Show the menu items when the hamburger menu is clicked */
-    flex-direction: column;
-  }
+.responsive-menu button {
+  margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .hamburger-icon {
+    display: block;
+  }
 
-
+  .header-options:not(.hamburger-menu) {
+    display: none;
+  }
+}
