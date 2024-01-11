@@ -11,7 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
-import { ServicesSectionComponent } from './components/services-section/services-section.component';
+import { BlogHomeComponent } from './components/blog-home/blog-home.component';
 
 const routes: Routes = [
   { path: 'Contact', component: ContactFormComponent },
@@ -25,7 +25,7 @@ const routes: Routes = [
     FooterComponent,
     IntroComponent,
     ContactFormComponent,
-    ServicesSectionComponent
+    BlogHomeComponent
   ],
   imports: [
     BrowserModule,
