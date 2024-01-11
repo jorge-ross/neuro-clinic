@@ -13,4 +13,19 @@
   position: relative;
   bottom: 0;
   width: 100%;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 12px;
+  }
 }
+
+.logo {
+  width: 50px;
+  padding: 0 5px;
+
+  @media only screen and (max-width: 500px) {
+    width: 30px;
+  }
+}
+
+
