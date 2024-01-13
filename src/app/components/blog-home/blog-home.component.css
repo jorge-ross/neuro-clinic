@@ -1,5 +1,5 @@
 .container {
-  min-height: 400px;
+  height: auto;
   margin: 0;
   background-color: #D6D3D1;
 }
@@ -9,4 +9,16 @@ h1 {
   padding-top: 16px;
   font-family: 'Raleway';
   font-size: 28px;
+}
+
+.blocks {
+  display: grid;
+
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 16px;
+  font-family: 'Raleway';
+  font-size: 20px;
 }

@@ -1,21 +1,22 @@
 .intro-container {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.37), rgba(45, 141, 225, 0.137)), url('../../../assets/images/intro-bg.png');
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.475), rgba(49, 145, 230, 0.242)), url('../../../assets/images/intro-bg.png');
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
   display: flex;
+  flex-direction: column;
   width: 100%;
-  gap: 28px;
+  gap: 12px;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 350px;
 
-  @media screen and (max-width: 850px) {
-    height: 150px;  
+  @media screen and (max-width: 900px) {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.475), rgba(49, 145, 230, 0.242)), url('../../../assets/images/intro-responsive.png');
   }
 
-  @media screen and (max-width: 450px) {
-    height: 100px;  
+  @media screen and (max-width: 620px) {
+    background-image: url('../../../assets/images/int-resp.png');
   }
 }
 
@@ -23,52 +24,95 @@
   color: rgb(255, 255, 255);
   margin: 16px 0;
   font-family: 'Raleway';
-  font-size: 90px;
+  font-size: 100px;
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1150px) {
+    font-size: 75px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 65px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 600px) {
     font-size: 50px;
     margin: 0;
   }
-
-  @media screen and (max-width: 450px) {
-    font-size: 30px;
-    margin: 0 0 8px 0;
-  }
 }
 
-.description{
+.description {
   color: rgb(255, 255, 255);
-  margin: 16px 0;
+  margin: 0;
+  width: 60%;
   font-family: 'Raleway';
-  font-size: 28px;
+  font-size: 16px;
   display: flex;
   justify-content: flex-end;
 
-  @media screen and (max-width: 850px) {
-    font-size: 16px;
+  @media screen and (max-width: 700px) {
     justify-content: center;
+    text-align: center;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 525px) {
+    font-size: 12px;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 335px) {
     font-size: 10px;
     margin: 0;
+    justify-content: center;
+    text-align: center;
   }
 }
 
 .site-intro {
   width: 60%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  height: 250px;
+  align-items: center;
+  gap: 4px;
 
-  @media screen and (max-width: 850px) {
-    height: 150px;  
+  @media only screen and (max-width: 870px) {
+    width: 80%;
+  }
+}
+
+.logoI {
+  width: 155px;
+  height: 130px;
+
+  @media only screen and (max-width: 1150px) {
+    width: 125px;
+    height: 100px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .site-intro {
+    flex-direction: column;
   }
 
-  @media screen and (max-width: 450px) {
-    height: 100px;  
+  .title {
+    order: -1;
+    font-size: 50px;
+    margin: 0 0 8px 0;
+  }
+}
+
+@media (max-width: 335px) {
+  .title {
+    order: -1;
+    font-size: 35px;
+    margin: 0 0 8px 0;
   }
 }
