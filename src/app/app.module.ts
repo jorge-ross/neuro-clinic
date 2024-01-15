@@ -12,7 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { BlogHomeComponent } from './components/blog-home/blog-home.component';
-import { ServicesComponent } from './services/services.component';
+import { ServicesComponent } from './components/psic-services/services.component';
 
 const routes: Routes = [
   { path: 'Contact', component: ContactFormComponent },
