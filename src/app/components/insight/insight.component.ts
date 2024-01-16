@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { Product } from "./../../models/product.model"
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-insight',

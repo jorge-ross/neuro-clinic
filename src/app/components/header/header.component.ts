@@ -19,15 +19,15 @@ export class HeaderComponent {
     this.isDropdownVisible = false;
   }
 
-  constructor(private router: Router) {
-    router.events.subscribe(event => {
-      console.log(event);
-    })
-  }
 
-  navigateToContact() {
-    this.router.navigate(['/Contact']);
-  }
+  // navigateToContact() {
+  //   this.router.navigate(['/Contact']);
+  // }
+
+  // navigateToServices() {
+  //   this.router.navigate(['/servicios']);
+  // }
+
 
   isMenuVisible: boolean = false;
 

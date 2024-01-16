@@ -4,29 +4,15 @@
       src="../../../assets/images/logo.png"
       alt="Neuro-dev Logo"
       class="styled-img"
+      routerLink="/"
     />
   </div>
   <div class="hamburger-icon" (click)="toggleMenu()">☰</div>
   <div class="right header-options" [ngClass]="{ 'hamburger-menu': isMenuVisible }">
     <button routerLink="/Sobre">Sobre mí</button>
-    <button routerLink="/Services">Servicios</button>
+    <button routerLink="/servicios">Servicios</button>
     <button routerLink="/Blog">Blog</button>
     <button routerLink="/Contact">Contacto</button>
-    <!-- <div
-      class="dropdown"
-      (mouseenter)="onMouseEnter()"
-      (mouseleave)="onMouseLeave()"
-    >
-      Servicios
-      <div
-        class="dropdown-content"
-        [ngClass]="{ 'show-dropdown': isDropdownVisible }"
-      >
-        <a routerLink="/Neuropsicologia">Neuropsicología</a>
-        <a routerLink="/Psicologia">Psicología</a>
-      </div>
-    </div> -->
-    
   </div>
 
 </div>
